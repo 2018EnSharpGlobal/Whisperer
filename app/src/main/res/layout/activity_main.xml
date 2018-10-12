@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="188dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="39dp"
+        android:text="상봉에서 군자로 갈래"
+        app:layout_constraintBottom_toTopOf="@+id/outputButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/inputButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="9dp"
+        android:text="Input"
+        app:layout_constraintBottom_toTopOf="@+id/indoorText"
+        app:layout_constraintEnd_toStartOf="@+id/lineButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailInformation" />
+
+    <Button
+        android:id="@+id/outputButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="19dp"
+        android:text="Output"
+        app:layout_constraintBottom_toTopOf="@+id/indoorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lineButton"
+        app:layout_constraintTop_toBottomOf="@+id/inputText" />"
+
+    <Button
+        android:id="@+id/lineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="Analyze"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outputButton"
+        app:layout_constraintEnd_toStartOf="@+id/outputButton"
+        app:layout_constraintStart_toEndOf="@+id/inputButton" />
+
+    <EditText
+        android:id="@+id/detailInformation"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="31dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/inputButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText" />
+
+    <EditText
+        android:id="@+id/indoorText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/indoorButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputButton" />
+
+    <Button
+        android:id="@+id/indoorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="97dp"
+        android:layout_marginEnd="61dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/indoorText"
+        app:layout_constraintTop_toBottomOf="@+id/outputButton" />
+
+</android.support.constraint.ConstraintLayout>
